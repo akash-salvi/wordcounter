@@ -28,9 +28,10 @@ input.addEventListener('keyup', function() {
 	  wordl=200-(input.value.length);
       wordlimit.innerHTML = wordl;    
   }
-  //if (wordl==0) {	
-	
-  //}
+  if (wordl==0) {	
+	alert("Reached the Character Limit!!!");
+  }
 
 });
+
 
