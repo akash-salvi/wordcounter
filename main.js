@@ -28,9 +28,9 @@ input.addEventListener('keyup', function() {
 	  wordl=200-(input.value.length);
       wordlimit.innerHTML = wordl;    
   }
-  if (wordl==0) {	
-		document.getElementById("text").disabled = true;
-  }
+  //if (wordl==0) {	
+	
+  //}
 
 });
 
