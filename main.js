@@ -1,12 +1,20 @@
-
+var Count; 
 var input = document.querySelectorAll('textarea')[0],
   characterCount = document.querySelector('#characterCount'),
   wordCount = document.querySelector('#wordCount'),
   paragraphCount = document.querySelector('#paragraphCount'),
   wordlimit = document.querySelector('#wordlimit');
   
+ 
+function myFunction() {
+  Count= document.getElementById("limit").value;;
+  document.getElementById("wordlimit").innerHTML = Count;
+  document.getElementById("text").maxLength = Count	;
+}
 input.addEventListener('keyup', function() {
+  
   console.clear();  
+  
   characterCount.innerHTML = input.value.length;
 
   var words = input.value.match(/\b[-?(\w+)?]+\b/gi);
@@ -25,10 +33,10 @@ input.addEventListener('keyup', function() {
   }
   
   if (words) {
-	  wordl=200-(input.value.length);
+	  wordl=Count-(input.value.length);
       wordlimit.innerHTML = wordl;    
   }
-  if (wordl==0) {	
+  if (input.value.length==Count) {	
 	alert("Reached the Character Limit!!!");
   }
 

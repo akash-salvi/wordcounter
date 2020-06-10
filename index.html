@@ -10,10 +10,14 @@
 	<body>
 	    <div class="container">
 		  <h1>Word Counter</h1>
-		  <div class="output row">
-			<div>Character Remaining:<span id="wordlimit">200</span></div>
+		  <div class="output">
+			<div>Enter The Characters Limit : <input type="number" id="limit" placeholder="Enter the Limit here..."><button onclick="myFunction()">Submit</button></div>
+			
 		  </div>
-		  <textarea maxlength="200" id="text" placeholder="Enter your text here..."></textarea>
+		  <div class="output row">
+			<div>Character Remaining: <span id="wordlimit"></span></div>
+		  </div>
+		  <textarea id="text" placeholder="Enter your text here..."></textarea>
 		  <div class="output row">
 			<div>Characters: <span id="characterCount">0</span></div>
 			<div>Words: <span id="wordCount">0</span></div>

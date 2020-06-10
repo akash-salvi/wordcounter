@@ -13,6 +13,18 @@ html {
 *:after {
   box-sizing: inherit;
 }
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 6px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2.5px 4px;
+  cursor: pointer;
+}
 
 b {
   font-weight: bold;
@@ -70,7 +82,7 @@ textarea:focus {
 
 .output.row div {
   display: inline-block;
-  width: 42%;
+  width: 45%;
   padding: 10px 15px;
   margin: 1%;
 }
@@ -80,6 +92,25 @@ textarea:focus {
   font-size: 1.5rem;
 }
 
+.output{
+  width: 100%;
+  border: 1px solid #DDD;
+  font-size: 1.4rem;
+  margin: 1% 0;
+  background-color: #F9F9F9;
+}
+
+.output div {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 1%;
+}
+
+input {
+  width: 35%;
+  font-size:19px;	
+}
 
 
 
